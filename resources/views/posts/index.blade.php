@@ -25,11 +25,11 @@
                         @method('DELETE')
                         <button type="submit" class="delete-btn">削除</button>
                     </form>
-                    <a href="/posts/{{$post->id}}/edit">
+                    <a href="{{ route('posts.edit', $post->id)}}">
                         <button type="button" class="edit-btn">編集</button>
                     </a>
-                    <a href="/posts/{{$post->id}}/show">
-                        <button type="sumit" class="reply-btn">返信</button>
+                    <a href="{{ route('posts.show', $post->id)}}">
+                        <button type="button" class="reply-btn">返信</button>
                     </a>
                 </div>
                 <div class="message-info">
