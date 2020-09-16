@@ -20,18 +20,17 @@
             <div class="message">
                 <div class="message-flex">
                     <p class="contributor">{{$post->contributor}}</p>
-                    <form method="post" action="/honda/mybbs/posts/index.php">
-                        <input type="hidden" name="delete_id" value="<?= $post["id"] ?>">
+                    <form method="POST" action="{{ route('posts.destroy', $post->id)}}">
+                        @csrf
+                        @method('DELETE')
                         <button type="submit" class="delete-btn">削除</button>
                     </form>
-                    <form method="get" action="{{ url('/posts/edit/{$post->id}')}}">
-                        <input type="hidden" name="update_id" value="{{$post->id}}">
-                        <button type="sumit" class="edit-btn">編集</button>
-                    </form>
-                    <form method="post" action="/honda/mybbs/posts/show.php/<?= $post["id"] ?>">
-                        <input type="hidden" name="post_id" value="<?= $post["id"] ?>">
+                    <a href="/posts/{{$post->id}}/edit">
+                        <button type="button" class="edit-btn">編集</button>
+                    </a>
+                    <a href="/posts/{{$post->id}}/show">
                         <button type="sumit" class="reply-btn">返信</button>
-                    </form>
+                    </a>
                 </div>
                 <div class="message-info">
                     <div class="message-text">
@@ -50,7 +49,7 @@
             @endforelse
         </div>
         <div class="form-content" id="newpost">
-            <form method="post" action="{{ url('/posts/create')}}">
+            <form method="POST" action="{{ route('posts.store')}}">
                 @csrf
                 <div class="field-box">
                     <label>投稿者</label>
