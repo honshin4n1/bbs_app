@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('/posts/index');
-// });
+Route::get('/', 'PostController@index');
+Route::resource('/posts', 'PostController');
 
-Route::get('/', 'PostsController@index')->name('index');
-Route::post('/posts/create', 'PostsController@create');
-Route::get('/posts/show/{id}', 'PostsController@show');
-Route::get('/posts/edit/{id}', 'PostsController@edit');
+// Route::get('/', 'PostsController@index')->name('index');
+// Route::post('/posts/create', 'PostsController@create');
+// Route::get('/posts/show/{id}', 'PostsController@show');
+// Route::get('/posts/edit/{id}', 'PostsController@edit');
+// Route::post('/posts/edit/{id}', 'PostsController@update');
