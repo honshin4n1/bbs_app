@@ -28,17 +28,19 @@
         </div>
       </div>
       <div class=message>
-        {{-- @forelse($comments as $comment)
+        @forelse($comments as $comment)
         <div class="comment">
-          <p class="comment-text"><?= $comment["body"] ?></p>
+          <p class="comment-text">{{$comment->body}}</p>
           <div class="replyer-info">
-            <p class="replyer"><?= $comment["replyer"] ?> /</p>
-            <p class="comment-created"><?= $comment["created_at"] ?></p>
+            <p class="replyer">{{$comment->replayer}} </p>
+            <p class="comment-created">{{$comment->created_at}}</p>
           </div>
         </div>
         @empty
+            <p class="comment-info">返信はありません</p>
+        </div>
 
-        @endforelse --}}
+        @endforelse
       </div>
     </div>
     <div class="form-content" id="newpost">
