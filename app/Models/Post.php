@@ -9,4 +9,9 @@ class Post extends Model
     //
 
     protected $fillable = ['contributor', 'message'];
+
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Comment');
+    }
 }
