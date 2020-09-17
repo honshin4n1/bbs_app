@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Post;
 
+use App\Models\Comment;
+
 class PostController extends Controller
 {
     /**
@@ -50,7 +52,9 @@ class PostController extends Controller
     public function show($id)
     {
         $post = Post::findOrFail($id);
-        return view('posts.show', compact('post'));
+        $comments = Post::findOrFail($id)->comments;
+
+        return view('posts.show', compact('post', 'comments'));
     }
 
     /**
