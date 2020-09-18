@@ -84,7 +84,7 @@ class PostController extends Controller
         'message' => $request->message
         ];
         Post::where('id', $id)->update($update);
-        return view('posts/update');
+        return view('posts.update');
     }
 
     /**
@@ -96,6 +96,6 @@ class PostController extends Controller
     public function destroy($id)
     {
         Post::where('id', $id)->delete();
-        return view('posts/destroy');
+        return view('posts.destroy');
     }
 }
