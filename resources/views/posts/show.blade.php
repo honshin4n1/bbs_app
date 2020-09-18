@@ -23,7 +23,7 @@
         </div>
         <div class="message-info">
             <div class="message-text">
-                <p class="text"><?= $post["message"] ?></p>
+                <p class="text">{{$post->message}}</p>
             </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
           <p class="comment-text">{{$comment->body}}</p>
           <div class="replyer-info">
             <p class="replyer">{{$comment->replayer}} </p>
-            <p class="comment-created">{{$comment->created_at}}</p>
+            <p class="comment-created">{{$comment->created_at->format('Y/m/d H:i')}}</p>
           </div>
         </div>
         @empty
@@ -44,10 +44,11 @@
       </div>
     </div>
     <div class="form-content" id="newpost">
-      <form method="post" action="/honda/mybbs/posts/show.php">
+      <form method="POST" action="{{route('posts.comments.store', $post->id)}}">
+        @csrf
         <div class="field-box">
           <label>ニックネーム</label>
-          <input type="text" name="replyer" class="field-user">
+          <input type="text" name="replayer" class="field-user">
         </div>
         <div class="field-box">
           <label>コメント</label>
@@ -55,11 +56,11 @@
           <textarea name="body" rows="4" cols="40" class="field-message"></textarea>
         </div>
         <div class="field-box">
+            <input type="hidden" name="post_id" value="{{$post->id}}">
           <div class="btn-box">
             <input type="submit" value="返信する" class="post-btn">
           </div>
         </div>
-        <input type="hidden" name="post_id" value="<?= $post["id"] ?>">
       </form>
     </div>
   </div>
