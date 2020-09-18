@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PostController@index');
 Route::resource('/posts', 'PostController');
+Route::resource('posts.comments', 'CommentController', ['only' => ['store']]);
 
 // Route::get('/', 'PostsController@index')->name('index');
 // Route::post('/posts/create', 'PostsController@create');
