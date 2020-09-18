@@ -206,12 +206,14 @@ label {
 
 .replyer {
   font-size: 14px;
+  margin-right: 5px;
 }
 
 .comment-created {
   font-size: 14px;
+  color: red;
 }
 
 .comment-info {
-  
+  color: red;
 }
