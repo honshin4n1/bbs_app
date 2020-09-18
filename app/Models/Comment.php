@@ -9,4 +9,9 @@ class Comment extends Model
     //
 
     protected $fillable = ['replayer', 'body', 'post_id'];
+
+    public function post()
+    {
+        return $this->belongsTo('App\Model\Post');
+    }
 }
