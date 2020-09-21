@@ -17,7 +17,7 @@
         <div class="message-flex">
             <p class="contributor">{{$post->contributor}}</p>
             <div>
-                <p class="creat-datetime">{{ $post->created_at->format('Y/m/d H:i')}} 作成</p>
+                <p class="creat-datetime">{{ $post->created_at->format('Y/m/d H:i')}} 作</p>
                 <p class="update-datetime">{{ $post->updated_at->format('Y/m/d H:i')}} 更新</p>
             </div>
         </div>
