@@ -10,6 +10,12 @@ use App\Models\Comment;
 
 class PostController extends Controller
 {
+
+    public function home()
+    {
+        $posts = Post::orderBy('id', 'desc')->get();
+        return view('layout', compact('posts'));
+    }
     /**
      * Display a listing of the resource.
      *
