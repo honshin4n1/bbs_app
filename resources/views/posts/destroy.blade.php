@@ -8,7 +8,7 @@
 <body>
   <header class="header">
     <div class="title">
-      <a href="/honda/mybbs/posts/index.php" class="title-link">My BBS</a>
+      <a href="/" class="title-link">My BBS</a>
     </div>
   </header>
   <div class="main-content">
