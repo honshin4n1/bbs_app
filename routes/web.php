@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/layout', 'PostController@home');
 Route::get('/', 'PostController@index');
 Route::resource('/posts', 'PostController');
 Route::resource('posts.comments', 'CommentController', ['only' => ['store']]);

@@ -44,6 +44,7 @@
                 </tr>
                 @empty
                 <tr>
+                    <td></td>
                     <td><p class="comment-info">返信はありません</p></td>
                 </tr>
                 @endforelse

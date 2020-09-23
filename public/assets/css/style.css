@@ -233,6 +233,11 @@ label {
     margin-bottom: 50px;
 }
 
+
+.pagination {
+    justify-content: center;
+}
+
 .footer {
     height: 80px;
     width: 100%;

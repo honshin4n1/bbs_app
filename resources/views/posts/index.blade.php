@@ -69,7 +69,7 @@
                 @endforelse
             </li>
         </ul>
-
+        {{$posts->links()}}
     </main>
     <footer class="footer">
         <div class="toppage-link-box">
