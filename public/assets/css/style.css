@@ -216,16 +216,21 @@ label {
 
 .replyer {
   font-size: 14px;
-  margin-right: 5px;
+  margin: 5px 10px;
 }
 
 .comment-created {
   font-size: 14px;
   color: red;
+  margin: 0;
 }
 
 .comment-info {
   color: red;
+}
+
+.table {
+    margin-bottom: 50px;
 }
 
 .footer {

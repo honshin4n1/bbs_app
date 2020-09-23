@@ -19,7 +19,8 @@
     </header>
     <main class="main-container">
         <div class="container">
-            <form>
+            <form method="POST" action="{{route('posts.store')}}">
+                @csrf
                 <div class="form-group">
                     <label for="exampleInputName">投稿者</label>
                     <input type="text" name="contributor" class="form-control" id="exampleInputName" placeholder="ニックネーム">
