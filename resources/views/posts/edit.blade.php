@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>MyBBS</title>
-  <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyBBS</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -36,9 +44,11 @@
             </form>
           </div>
     </div>
-    <div class="toppage-link-box">
-        <a href="/">トップページへ戻る</a>
-    </div>
   </div>
+  <footer class="footer">
+      <div class="toppage-link-box">
+          <a href="/">トップページへ戻る</a>
+      </div>
+  </footer>
 </body>
 </html>
