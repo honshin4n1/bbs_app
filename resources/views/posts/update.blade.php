@@ -19,13 +19,13 @@
       <a href="/" class="title-link">My BBS</a>
     </div>
   </header>
-  <div class="main-content">
+  <main class="main-container">
     <div class="messages">
       <div class="message">
         <p class="update-info">更新が完了しました</p>
       </div>
     </div>
-  </div>
+  </main>
   <footer class="footer">
     <div class="toppage-link-box">
         <a href="/">トップページへ戻る</a>

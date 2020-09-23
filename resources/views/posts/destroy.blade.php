@@ -14,20 +14,22 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="title">
-      <a href="/" class="title-link">My BBS</a>
-    </div>
-  </header>
-  <div class="main-content">
-    <div class="messages">
-      <div class="message">
-        <p class="update-info">削除しました</p>
-      </div>
-    </div>
-  </div>
-  <div class="toppage-link-box">
-    <a href="/">トップページへ戻る</a>
-  </div>
+    <header class="header">
+        <div class="title">
+            <a href="/" class="title-link">My BBS</a>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="messages">
+            <div class="message">
+                <p class="update-info">削除しました</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="toppage-link-box">
+            <a href="/">トップページへ戻る</a>
+        </div>
+    </footer>
 </body>
 </html>
