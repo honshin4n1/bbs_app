@@ -11,15 +11,18 @@ body {
 }
 
 .header {
-  height: 80px;
+  height: 70px;
   width: 100%;
-  background-color: aquamarine;
+  background-color: #ffff;
+  border-bottom: 1px solid #cfcfcf;
+  position: fixed;
+  top: 0;
 }
 
 .title {
-  line-height: 80px;
+  line-height: 70px;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -32,9 +35,10 @@ body {
     height: 100%;
     width: 70%;
     margin: 0 auto;
+    margin-top: 70px;
     padding: 30px 0;
     flex: 1;
-    background-color: azure;
+    background-color: #fff;
 }
 
 .post-link-box {
