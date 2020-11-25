@@ -7,7 +7,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #efefef;
 }
 
 .header {
@@ -39,6 +39,8 @@ body {
     padding: 30px 0;
     flex: 1;
     background-color: #fff;
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
 }
 
 .post-link-box {
@@ -245,7 +247,8 @@ label {
 .footer {
     height: 80px;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #fff;
+    border-top: 1px solid#cfcfcf;
 }
 
 @media screen and (max-width: 700px) {
